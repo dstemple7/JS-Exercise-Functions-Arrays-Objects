@@ -173,18 +173,20 @@ console.log(appleIndex(fruits));
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 
-function isItAnApple(fruits) {
-  for (let i = 0; i < fruits.length; i++){
-    if (fruits[i] === 'apple'){
-    console.log('true');
-  }
-    else {
-    console.log('false');
+function isItAnApple(fruits){
+  let appleBarrell = [];  
+
+    for(let i = 0; i < fruits.length; i++){
+    if (fruits[i] == 'apple'){
+    appleBarrell.push(true);
+    } else {
+      appleBarrell.push(false);
     }
   }
+  return appleBarrell
 }
 
-isItAnApple(fruits);
+console.log(isItAnApple(fruits));
 
 // ⭐️ Example Test Data ⭐️
 
